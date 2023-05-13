@@ -111,7 +111,6 @@ nav {
 
 section {
     display: flex;
-    flex: 1 1;
     padding: 0 10%;
     padding-top: 10%;
     box-sizing: border-box;
