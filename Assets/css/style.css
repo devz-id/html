@@ -111,8 +111,9 @@ nav {
 
 section {
     display: flex;
+    justify-content: space-between;
     padding: 0 10%;
-    padding-top: 10%;
+    padding-top: 7%;
     box-sizing: border-box;
 }
 
@@ -142,7 +143,7 @@ section {
 .left p {
     padding: 25px 0 20px;
     letter-spacing: 2px;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .social {
@@ -209,9 +210,10 @@ section {
 .right {
     width: 40%;
     height: 100vh;
+
 }
 
-.right .pic {
+.pic {
     width: 100%;
     height: 500px;
     padding: 10px 10px;
@@ -223,3 +225,52 @@ section {
 /*RIGHT END*/
 
 /*SECTION HOME END*/
+
+/*SECTION PROFILE START*/
+
+.left-profile {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+
+.right-profile {
+    width: 60%;
+    padding: 1em 1em;
+    box-sizing: border-box;
+}
+
+.about-me {
+    width: 100%;
+}
+
+.about-me::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid var(--primary);
+    animation: aboutMe 3s alternate infinite;
+}
+
+@keyframes aboutMe {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+.about-me h1{
+    text-transform: capitalize;
+    padding-top: 5%;
+}
+
+.text-about-me {
+    padding-top: 5%;
+    text-align: justify;
+}
+
+
+
+
+/*SECTION PROFILE END*/
