@@ -113,8 +113,11 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
-    padding-top: 7%;
     box-sizing: border-box;
+}
+
+#home {
+    padding-top: 10%;
 }
 
 .left {
