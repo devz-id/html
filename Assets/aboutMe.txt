@@ -1,6 +1,4 @@
 
-Tentu, berikut ini adalah contoh isi About Me yang lebih singkat dan jelas:
-
 Halo, saya Adi Prasetyo. Saya adalah seorang mahasiswa jurusan Teknik Informatika yang sedang mempelajari HTML, CSS, dan sedikit JavaScript.
 
 Saya bercita-cita menjadi seorang fullstack developer yang handal dan kreatif. Saya sedang mengembangkan beberapa proyek sederhana dan belajar teknologi seperti React, Node.js, dan MongoDB.
