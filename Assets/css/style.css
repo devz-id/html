@@ -113,7 +113,9 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
+    height: 100vh;
     box-sizing: border-box;
+/*    border: 2px solid darkred;*/
 }
 
 #home {
@@ -231,16 +233,28 @@ section {
 
 /*SECTION PROFILE START*/
 
-.left-profile {
-    width: 45%;
-    box-sizing: border-box;
+#profile {
+    display: flex;
+    padding-top: 7%;
 }
 
+.left-profile {
+/*    width: 45%;*/
+    flex: 1.5;
+    box-sizing: border-box;
+/*    border: 2px solid green;*/
+}
+
+.pic-profile {
+    background-position: -50px -100px;
+}
 
 .right-profile {
-    width: 60%;
+/*    width: 60%;*/
+    flex: 2.5;
     padding: 1em 1em;
     box-sizing: border-box;
+/*    border: 2px solid blue;*/
 }
 
 .about-me {
@@ -273,7 +287,68 @@ section {
     text-align: justify;
 }
 
-
-
-
 /*SECTION PROFILE END*/
+
+/*SECTION PROJECT START*/
+
+#project {
+    padding-top: 7%;
+}
+
+.project-container {
+    width: 100%;
+    box-sizing: border-box;
+/*    border: 2px solid skyblue;*/
+}
+
+.nav-project {
+/*    border: 1px solid yellow;*/
+}
+
+.nav-project h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.swiper {
+    height: 100%;
+    margin-top: 20px;
+/*    border: 2px solid salmon;*/
+/*    background-color: red;*/
+}
+
+.swiper > .swiper-wrapper {
+    height: 75%;
+/*    background-color: green;*/
+}
+
+
+.slide,
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+/*    border: 2px solid white;*/
+}
+
+.slide  img {
+/*    display: inline-flex;*/
+    object-fit: cover;
+    object-position: 0 2px;
+    padding: 10px 10px;
+    cursor: pointer;
+/*    border: .7px solid var(--primary);*/
+}
+
+
+
+.swiperBtn::after{
+    font-weight: 600;
+    color: var(--primary);
+}
+
+
+
+/*SECTION PROJECT END*/
