@@ -16,3 +16,5 @@ var typed = new Typed('#multiple-text', {
 	loop: true
 })
 
+
+

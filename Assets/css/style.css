@@ -8,6 +8,7 @@ body {
 
 :root {
     --primary:rgb(10, 210, 245);
+    --secondary: rgba(10, 210, 245, .7);
     --bg-color:rgba(42, 47, 48, 1);
     --white: rgba(255, 255, 255, 1);
 }
@@ -112,7 +113,6 @@ nav {
 
 section {
     display: flex;
-    justify-content: space-between;
     padding: 0 10%;
     height: 100vh;
     box-sizing: border-box;
@@ -308,15 +308,23 @@ section {
 
 }
 
+.nav-project h1::after {
+    right: 470px;
+    width: 150px;
+}
+
 .nav-project h1::after,
 .contact h1::after{
     content: '';
     position: absolute;
     bottom: 0;
-    right: 465px;
-    width: 150px;
     border-bottom: 2px solid var(--primary);
-    animation: projectAnimate 3s alternate infinite;
+    animation: projectAnimate 1s alternate infinite;
+}
+
+.contact h1::after {
+    width: 120px;
+    left: 5px;
 }
 
 @keyframes projectAnimate {
@@ -384,5 +392,160 @@ section {
     position: absolute;
     right: -10.4px;
 }
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 400px;
+    padding: 30px 30px 20px;
+    border-radius: 20px;
+    border: .5px inset var(--primary);
+    box-shadow: 0 0 5px var(--primary);
+}
+
+
+#name,
+#email {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color: var(--secondary);
+}
+
+.area {
+    width: 70%;
+    height: 100px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    overflow: visible;
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#name::placeholder,
+#email::placeholder,
+.area::placeholder {
+    color: var(--white);
+}
+
+#name:focus::placeholder,
+#email:focus::placeholder,
+.area:focus::placeholder {
+    color: var(--primary);
+}
+
+#name:focus,
+#email:focus,
+.area:focus {
+    color: var(--primary);
+    caret-color: var(--primary);
+    box-shadow: 0 0 2px var(--primary);
+    background-color: transparent;
+}
+
+.radio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.left-radio,
+.right-radio {
+    display: flex;
+    justify-content: start;
+    width: 50%;
+}
+
+input[type="radio"]{
+    transform: scale(1.05);
+    outline: none;
+}
+
+.radio-label {
+    margin-left: 7px;
+}
+
+.radio-label p {
+    font-size: .8em;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.btn-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-wrapper,
+.btn {
+    width: 100px;
+    margin: 0 auto;
+    padding: 2px 2px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: .5px inset var(--primary);
+}
+
+.btn-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.btn-wrapper:hover::before {
+    width: 100%;
+    background-color: var(--primary);
+    transition: .5s ease-in-out all;
+    animation: btn 1s alternate forwards;
+}
+
+@keyframes btn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: var(--primary);
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    color: var(--white);
+}
+
+
+
+
 
 /*SECTION TALK END*/
