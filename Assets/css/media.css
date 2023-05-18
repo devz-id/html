@@ -127,6 +127,10 @@
         width: 100vw;
     }
 
+    .form {
+        width: 80%;
+    }
+
     .radio-label p {
         font-size: .75em;
     }
