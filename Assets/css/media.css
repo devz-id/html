@@ -1,5 +1,11 @@
 /*mobile landscape 576px*/
 @media screen and (max-width: 576px) {
+
+
+    p {
+        font-size: 15px;
+    }
+
     section {
         padding: 0 7px;
         height: auto;
@@ -63,6 +69,65 @@
 
     .btnCv {
         padding: 10px 10px;
-        margin: 10px 0 0;
+        margin: 20px 0 0;
+    }
+
+
+    #profile {
+        padding-top: 0;
+    }
+
+    .pic-profile {
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+    }
+
+    .left-profile {
+        display: none;
+    }
+
+    .right-profile {
+        text-align: center;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        border: .5px inset var(--primary);
+        box-shadow: 0 0 2px var(--primary);
+    }
+
+    .text-about-me {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .about-me::after {
+        margin: 0 auto;
+        animation: aboutMe 2s alternate infinite;
+    }
+
+    @keyframes aboutMe {
+        0% {
+            width: 5%;
+        }
+
+        100% {
+            width: 20%;
+        }
+    }
+
+    .nav-project h1::after {
+        content: "";
+        width: 150px;
+        right: 205px;
+    }
+
+
+    .form-wrapper {
+        width: 100vw;
+    }
+
+    .radio-label p {
+        font-size: .75em;
     }
 }
