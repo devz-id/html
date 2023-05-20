@@ -25,6 +25,7 @@ a {
 
 /*HEADER STYLE START*/
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,7 @@ nav {
     padding: 10px 10%;
     box-shadow: 1px 0 3px var(--white);
     background-color: var(--bg-color);
-    z-index: 9999;
+    z-index: 100;
 }
 
 .brand {
@@ -67,6 +68,23 @@ nav {
     justify-content: center;
     align-items: center;
 /*    border: 1px solid white;*/
+}
+
+
+#menuIcon {
+    display: none;
+    font-size: 30px;
+    margin: 0 10px 0;
+}
+
+.x-icon {
+    font-weight: bold;
+    font-size: 2.5em;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    color: var(--bg-color);
+
 }
 
 .menu a {
@@ -117,6 +135,7 @@ section {
     padding: 0 10%;
     height: 100vh;
     box-sizing: border-box;
+/*    border: 2px solid red;*/
 }
 
 #home {

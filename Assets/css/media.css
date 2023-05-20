@@ -7,7 +7,7 @@
     }
 
     section {
-        padding: 0 7px;
+        padding:  7px;
         height: auto;
         padding-bottom: 50px;
     }
@@ -16,21 +16,30 @@
         padding: 10px 7px ;
     }
 
+    #menuIcon {
+        display: block;
+    }
     .menu {
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
         top: 0;
-        right: -80%;
-        width: 80%;
+        right: -100%;
+        width: 50%;
         height: 100vh;
-        padding: 50px;
-        background-color: var(--bg-color);
+        padding: 100px 50px;
+        background-color: var(--primary);
         backdrop-filter: blur;
+        transition: 1s ease;
     }
 
     .menu a {
         margin: 0 auto;
+        color: var(--white);
+    }
+
+    .menu a::after {
+        border-bottom: 2.5px solid var(--bg-color);
     }
 
     #home {
@@ -73,8 +82,10 @@
     }
 
 
-    #profile {
-        padding-top: 0;
+    #profile,
+    #project,
+    #talk {
+        padding-top: 20%;
     }
 
     .pic-profile {
@@ -101,9 +112,10 @@
         font-size: 15px;
     }
 
-    .about-me::after {
-        margin: 0 auto;
-        animation: aboutMe 2s alternate infinite;
+    .about-me::after,
+    .nav-project h1::after,
+    .contact h1::after {
+        display: none;
     }
 
     @keyframes aboutMe {
@@ -115,13 +127,6 @@
             width: 20%;
         }
     }
-
-    .nav-project h1::after {
-        content: "";
-        width: 150px;
-        right: 205px;
-    }
-
 
     .form-wrapper {
         width: 100vw;
